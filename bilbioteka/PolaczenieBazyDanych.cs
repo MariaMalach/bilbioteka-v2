@@ -8,7 +8,7 @@ namespace bilbioteka
 {
     public static class PolaczenieBazyDanych
     {
-        public static string DataSource { get; set; } = "MaryM";
+        public static string DataSource { get; set; } = "LAPTOP-UPOKNEIT";
         public static string InitialCatalog { get; set; } = "biblioteka";
         public static bool IntegratedSecurity { get; set; } = true;
         public static bool TrustServerCertificate { get; set; } = true;
