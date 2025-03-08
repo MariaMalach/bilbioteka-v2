@@ -91,7 +91,6 @@ namespace bilbioteka.Forms
             string tytul = textBoxTytul.Text;
             string kwota = textBoxKwota.Text;
             string idText = textBox4.Text;
-            string typ = textBoxTyp.Text;
 
             if (string.IsNullOrWhiteSpace(login))
             {
@@ -102,12 +101,6 @@ namespace bilbioteka.Forms
             if (string.IsNullOrWhiteSpace(tytul))
             {
                 MessageBox.Show("Proszę wpisać tytuł zasobu.");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(typ))
-            {
-                MessageBox.Show("Proszę wpisać typ zasobu.");
                 return;
             }
 
@@ -122,7 +115,6 @@ namespace bilbioteka.Forms
                 MessageBox.Show("Proszę wpisać poprawne ID.");
                 return;
             }
-           
 
             try
             {
@@ -227,8 +219,6 @@ namespace bilbioteka.Forms
             string tytul = textBoxTytul.Text;
             string kwota = textBoxKwota.Text;
             string typ = textBoxTyp.Text;
-            string idText = textBox4.Text;
-
 
 
             if (string.IsNullOrWhiteSpace(login))
@@ -246,20 +236,6 @@ namespace bilbioteka.Forms
             if (string.IsNullOrWhiteSpace(kwota))
             {
                 MessageBox.Show("Proszę wpisać kwotę kary.");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(typ))
-            {
-                MessageBox.Show("Proszę wpisać typ zasobu.");
-                return;
-            }
-
-            
-
-            if (!int.TryParse(idText, out int id))
-            {
-                MessageBox.Show("Proszę wpisać poprawne ID.");
                 return;
             }
 
